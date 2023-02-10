@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+<!--A page with just text and buttons. Only use for this page is to transition to other pages.-->
+
+    <!--Delete button (testing, not in final)-->
+    <Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="delete all users"
+        android:id="@+id/delete"
+    />
+
+    <!--Wlecome text-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the app!"
+        android:textColor="@color/light_grey"
+        android:textSize="40dp"
+        android:layout_marginTop="175dp"
+        android:gravity="center"
+        android:id="@+id/welcometext"
+        />
+
+    <!--Text describing first set of buttons-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Want to order tickets? Check out these:"
+        android:layout_below="@+id/welcometext"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/textabovetextbuttons"
+        android:gravity="center"
+        />
+
+    <!--Button for signing up-->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textabovetextbuttons"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="75dp"
+        android:text="Sign up"
+        android:id="@+id/button1"
+        />
+
+    <!--Button for signing in-->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textabovetextbuttons"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="225dp"
+        android:text="Sign in"
+        android:id="@+id/button2"
+        />
+
+    <!--Text for second set of buttons.-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Want some assistance? Check out these:"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/textaboveotherbuttons"
+        android:gravity="center"
+        />
+
+    <!--Help button-->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textaboveotherbuttons"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="75dp"
+        android:text="Help"
+        android:id="@+id/button3"
+        />
+
+    <!--About button-->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textaboveotherbuttons"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="225dp"
+        android:text="About"
+        android:id="@+id/button4"
+        />
+
+</RelativeLayout>

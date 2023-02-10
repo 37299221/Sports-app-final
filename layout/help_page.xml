@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--A file explaining a steb by step of how to get a ticket, although all image sare missing (blank spots).-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Subtitle-->
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="How To Use The App"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="36dp" />
+
+    <!--Text 1-->
+    <TextView
+        android:id="@+id/text1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subtitle"
+        android:layout_marginTop="90dp"
+        android:text="This page will go through step by step of how to order a ticket, so that you can visit the tournament at Exe River Sports."
+        android:textSize="24dp" />
+
+    <!--Text2-->
+    <TextView
+        android:id="@+id/text2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="12dp"
+        android:text="First, you will need to go to the home page. The page should look like the one below:"
+        android:textSize="24dp" />
+
+    <!--Image1-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/image1"
+        android:layout_below="@id/text2"
+    />
+
+    <!--Text3-->
+    <TextView
+        android:id="@+id/text3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="12dp"
+        android:textSize="24dp"
+        android:text="Next, click 'sign up'. You will need an account to be able to order a ticket to view the tournament."
+    />
+
+    <!--Text4-->
+    <TextView
+        android:id="@+id/text4"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text3"
+        android:layout_marginTop="12dp"
+        android:textSize="24dp"
+        android:text="If the sign button does not work, there may already be an account that has been made with that username."
+        />
+
+    <!--Image2-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/image2"
+        android:layout_below="@id/text4"
+        />
+
+    <!--Text5-->
+    <TextView
+        android:id="@+id/text5"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image2"
+        android:layout_marginTop="12dp"
+        android:textSize="24dp"
+        android:text="Once an account has been made, you can use that same information to login again at any time. After signing up, you will be greeted with this screen below:"
+        />
+
+    <!--Image3-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/image3"
+        android:layout_below="@id/text5"
+        />
+
+    <!--Text6-->
+    <TextView
+        android:id="@+id/text6"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image3"
+        android:layout_marginTop="12dp"
+        android:textSize="24dp"
+        android:text="Each ticket on this next page can be purchased once, with an extra option to have food or drink. After this stage, you will then taken to the appropriate page to pay."
+        />
+
+    <!--Image4-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/image4"
+        android:layout_below="@id/text6"
+        />
+
+    <!--Text7-->
+    <TextView
+        android:id="@+id/text7"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image4"
+        android:layout_marginTop="12dp"
+        android:textSize="24dp"
+        android:text="After paying, you will then have recieved a ticket printed onto your account, which you can look ast after logging in again."
+        />
+
+    <!--Home button-->
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@color/blue"
+        android:text="Home"
+        android:textSize="24dp"
+        android:layout_below="@+id/text7"/>
+
+</RelativeLayout>
+
+    </TableLayout>
+</ScrollView>

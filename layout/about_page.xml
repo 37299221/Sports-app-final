@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Title of page-->
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="What Is This App About?"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="36dp" />
+
+    <!--Text explaining what the app is made for-->
+    <TextView
+        android:id="@+id/text1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subtitle"
+        android:layout_marginTop="40dp"
+        android:text="This app is solely used to order tickets for the upcoming sports tournament at Exe River Sports in Devon, which starts on March 25th 2023."
+        android:textSize="24dp" />
+
+    <!--Text that tells the user what to click on-->
+    <TextView
+        android:id="@+id/text2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="12dp"
+        android:text="You can find out how to order tickets by clicking the button 'Help' below, which will take you step by step of how to order a ticket."
+        android:textSize="24dp" />
+
+    <!--Button redirecting to the 'help' page-->
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@color/blue"
+        android:text="Help"
+        android:textSize="24dp" />
+
+    <!--Button redirecting to the 'home' page-->
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnHelp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="-75dp"
+        android:backgroundTint="@color/blue"
+        android:text="Go Home"
+        android:textSize="24dp" />
+
+</RelativeLayout>
+
+        </TableLayout>
+    </ScrollView>
